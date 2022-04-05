@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Athletic Graphic T-shirt (Women's)",
+    "price": 40,
+    "image": "images/product-one.webp",
+    "description": "Women's t-shirt that easily combines comfort and style while the design will make it into a unique statement piece."
+  },
+  {
+    "title": "Athletic Graphic T-shirt (Men's)",
+    "price": 40,
+    "image": "images/product-two.webp",
+    "description": "Men's t-shirt that easily combines comfort and style while the deign will make it into a unique statement piece."
+  },
+  {
+    "title": "Black Rash Guard",
+    "price": 45,
+    "image": "images/product-three.webp",
+    "description": "This smooth and versatile long-sleeve rash guard will protect you while you have fun doing sports. It is slim-fitted with flat ergonomic seams, and a bit longer than your casual tee for extra comfort and protection."
+  },
+  {
+    "title": "Graphic iPhone Case",
+    "price": 15,
+    "image": "images/product-four.webp",
+    "description": "This sleek iPhone case protects your phone from scratches, dust, oil, and dirt. It has a solid back and flexible sides that make it easy to take on and off, with precisely aligned port openings."
+  },
+
+  {
+    "title": "Graphic Samsung Case",
+    "price": 15,
+    "image": "images/product-five.webp",
+    "description": "This sleek Samsung case protects your phone from scratches, dust, oil, and dirt. It has a solid back and flexible sides that make it easy to take on and off, with precisely aligned cuts and holes."
+  },
+  {
+    "title": "Graphic Drawstring Bag",
+    "price": 25,
+    "image": "images/product-six.webp",
+    "description": "Combine your love for vibrant prints and a sporty style with a cool drawstring bag. It's a must-have gym essential that can be worn as a backpack with drawstring closure at top, and narrow, contrasting shoulder straps."
+  },
+
+  {
+    "title": "Graphic Pillow",
+    "price": 30,
+    "image": "images/product-seven.webp",
+    "description": "Want to add a splash of color to your home? This premium feel pillow with a shape-retaining insert is just what you're looking for! It'll make any room luxurious and provide the perfect excuse for a quick power nap."
+  },
+  {
+    "title": "Graphic Fask Mask",
+    "price": 10,
+    "image": "images/product-eight.webp",
+    "description": "This reusable face mask will fit you nicely thanks to it's adjustable nose wire and elastic bands. Choose a design that will complement your style."
+  },
+  {
+    "title": "Graphic Laptop Sleeve",
+    "price": 25,
+    "image": "images/product-nine.webp",
+    "description": "Protect your laptop in style—get this snug, lightweight laptop sleeve! To prevent any scratch marks, it contains an internal padded zipper and its interior is fully lined with faux fur."
+  },
+  {
+    "title": "Graphic Beanie",
+    "price": 20,
+    "image": "images/product-ten.webp",
+    "description": "This beanie will keep you warm on chilly days and serve as a stylish addition to your outfit. It’s double-layered, soft, and comfy!"
+  },
+  {
+    "title": "Graphic Duffle Bag",
+    "price": 80,
+    "image": "images/product-eleven.webp",
+    "description": "This duffle bag is the perfect companion for every occasion—take it with you when traveling, running daily errands, or going to the gym. The bag is spacious and will keep all your stuff neat and organized with its multiple pockets, including one with a zipper for your most valuable possessions."
+  },
+
+  {
+    "title": "Graphic Tank Top",
+    "price": 30,
+    "image": "images/product-twelve.webp",
+    "description": "This tank top has everything you could possibly need – vibrant colors, soft material, and a relaxed fit that will make you look fabulous!"
+  }
+]

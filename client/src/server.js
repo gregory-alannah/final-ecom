@@ -1,6 +1,5 @@
 //setup for server to connect to sql database products table
 // grabbing the dependinces
-// another test
 
 const express = require("express"); //asking for express
 const cors = require("cors"); //cors is usually for apis most of the time, can get you through permissions
