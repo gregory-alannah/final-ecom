@@ -36,6 +36,7 @@ db.connect((err) => {
 
 app.use(cors());
 app.use(express.json()); //formatting all results into json
+app.use(express.static(__dirname + "/public"));
 
 // getting the api endpoint and doing a db.query that selects all items from tables products in sql
 // and returns a json file
@@ -49,6 +50,8 @@ app.get("/products", (req, res) => {
   });
 });
 
+// enviornment variable that heorku automatically uses and
+// setting the port. If that doesn't exist use 3001
 const port = process.env.PORT || 3001;
 
 // listening for the port and logging it to the terminal
