@@ -13,16 +13,16 @@ const db = mysql.createConnection({
   // ClearDB MySQL setup credentials
   // attempting to make this website live with heroku's credentials it gave to set up a sql database
   // error occurs when I
-  host: "us-cdbr-east-05.cleardb.net",
-  user: "bf6f41ee382d47",
-  password: "b7fab6bc",
-  database: "heroku_929a4dfecfd60c3",
+  // host: "us-cdbr-east-05.cleardb.net",
+  // user: "bf6f41ee382d47",
+  // password: "b7fab6bc",
+  // database: "heroku_929a4dfecfd60c3",
 
   // local machine
-  // host: "localhost",
-  // user: "root",
-  // password: "password",
-  // database: "ecommerce",
+  host: "localhost",
+  user: "root",
+  password: "password",
+  database: "ecommerce",
 });
 
 // returning an error if connection was sucessful or not
