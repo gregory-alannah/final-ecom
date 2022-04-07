@@ -22,7 +22,7 @@ class Product extends React.Component {
   // used to execute the code
   componentDidMount() {
     //fetching the url from the local host that's referencing the data I have in my server
-    fetch("http://localhost:4000/products")
+    fetch("http://localhost:3001/products")
       // returning the products in json format, the data loaded will now be set to true
       .then((res) => res.json())
       .then((json) => {

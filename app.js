@@ -17,7 +17,7 @@ const db = mysql.createConnection({
   user: "bf6f41ee382d47",
   password: "b7fab6bc",
   database: "heroku_929a4dfecfd60c3",
-  
+
   // local machine
   // host: "localhost",
   // user: "root",
@@ -49,11 +49,9 @@ app.get("/products", (req, res) => {
   });
 });
 
-// creating a variable that stores the port for local host
-// env
-let myport = 4000;
+const port = process.env.PORT || 3001;
 
 // listening for the port and logging it to the terminal
-app.listen(myport, () => {
-  console.log(`port is running on ${myport}`);
+app.listen(port, () => {
+  console.log(`port is running on ${port}`);
 });
