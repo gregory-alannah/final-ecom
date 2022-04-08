@@ -5,6 +5,7 @@
 const express = require("express"); //asking for express
 const cors = require("cors"); //cors is usually for apis most of the time, can get you through permissions
 const mysql = require("mysql"); // pull the mysql package
+const path = require("path");
 
 const app = express();
 
@@ -36,7 +37,7 @@ db.connect((err) => {
 
 app.use(cors());
 app.use(express.json()); //formatting all results into json
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/client/build"));
 
 // getting the api endpoint and doing a db.query that selects all items from tables products in sql
 // and returns a json file
@@ -46,6 +47,14 @@ app.get("/products", (req, res) => {
       console.log(err);
     } else {
       res.send(result);
+    }
+  });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"), err => {
+    if (err) {
+      console.log(err);
     }
   });
 });
