@@ -26,10 +26,10 @@ class Product extends React.Component {
 
     // if we are in production, the URL wont include "localhost", so we can use a relative path
     // e.g. "/products" 
-    if (window.location.href.indexOf('localhost') === 1) {
+    if (window.location.href.indexOf('localhost') === -1) {
       apiHost = "";
     }
-    
+
     //fetching the url from the local host that's referencing the data I have in my server
     fetch(apiHost + "/products")
       // returning the products in json format, the data loaded will now be set to true
