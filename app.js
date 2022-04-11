@@ -10,10 +10,9 @@ const path = require("path");
 const app = express();
 
 //connecting to my sql database eccomerce
-const db = mysql.createConnection({
+const db = mysql.createPool({
   // ClearDB MySQL setup credentials
   // attempting to make this website live with heroku's credentials it gave to set up a sql database
-  // error occurs when I
   host: "us-cdbr-east-05.cleardb.net",
   user: "bf6f41ee382d47",
   password: "b7fab6bc",
@@ -27,13 +26,13 @@ const db = mysql.createConnection({
 });
 
 // returning an error if connection was sucessful or not
-db.connect((err) => {
-  if (err) {
-    return err;
-  } else {
-    console.log("database connection was successful.");
-  }
-});
+// db.connect((err) => {
+//   if (err) {
+//     return err;
+//   } else {
+//     console.log("database connection was successful.");
+//   }
+// });
 
 app.use(cors());
 app.use(express.json()); //formatting all results into json
@@ -57,12 +56,12 @@ app.get("/products", (req, res) => {
 // The "*" will catch ALL requests that aren't matched above.  So,
 // this method will run if:
 //
-// 1. The path doesn't match a file in ./client/build directory 
+// 1. The path doesn't match a file in ./client/build directory
 // 2. The path isn't /products
 app.get("*", (req, res) => {
   // Since your app is a SPA, we want to simply serve the index.html file for
   // all app paths
-  res.sendFile(path.join(__dirname, "./client/build/index.html"), err => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"), (err) => {
     if (err) {
       console.log(err);
     }
