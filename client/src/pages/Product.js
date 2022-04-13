@@ -25,8 +25,8 @@ class Product extends React.Component {
     let apiHost = "http://localhost:3001";
 
     // if we are in production, the URL wont include "localhost", so we can use a relative path
-    // e.g. "/products" 
-    if (window.location.href.indexOf('localhost') === -1) {
+    // e.g. "/products"
+    if (window.location.href.indexOf("localhost") === -1) {
       apiHost = "";
     }
 

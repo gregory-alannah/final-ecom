@@ -10,29 +10,15 @@ const path = require("path");
 const app = express();
 
 //connecting to my sql database eccomerce
+// When you use pool you don't need the connection anymore. You can query directly the pool. MySQL module will search for the next free connection to execute your query.
 const db = mysql.createPool({
+  // A pool is a place where connections get stored
   // ClearDB MySQL setup credentials
-  // attempting to make this website live with heroku's credentials it gave to set up a sql database
   host: "us-cdbr-east-05.cleardb.net",
   user: "bf6f41ee382d47",
   password: "b7fab6bc",
   database: "heroku_929a4dfecfd60c3",
-
-  // local machine
-  // host: "localhost",
-  // user: "root",
-  // password: "password",
-  // database: "ecommerce",
 });
-
-// returning an error if connection was sucessful or not
-// db.connect((err) => {
-//   if (err) {
-//     return err;
-//   } else {
-//     console.log("database connection was successful.");
-//   }
-// });
 
 app.use(cors());
 app.use(express.json()); //formatting all results into json

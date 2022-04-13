@@ -53,14 +53,16 @@ html {
 }
 
 .about-section {
-  text-align: center;
+  text-align: justify;
   background: #172f4f;
-  padding: 4rem;
+  padding: 0.9rem;
   color: white;
 }
 
 .about-h1 {
   font-size: 3rem;
+  text-align: center;
+  margin: 0.3rem;
 }
 
 .about-paragraph {
@@ -181,7 +183,7 @@ html {
 }
 
 input,
-label,
+.contact,
 textarea {
   width: 100%;
   display: block;

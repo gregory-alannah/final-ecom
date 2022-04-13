@@ -13,22 +13,28 @@ const Contact = () => {
           <hr className="underline" />
           <br />
 
-          <label for="fullname">Full Name:</label>
+          <label class="contact" for="fullname">
+            Full Name:
+          </label>
           <input type="text" id="fullname" required />
           <br />
 
-          <label for="phone">Phone Number:</label>
+          <label class="contact" for="phone">
+            Phone Number:
+          </label>
           <input type="tel" id="phone" required />
           <br />
 
-          <label for="email">Email:</label>
+          <label class="contact" for="email">
+            Email:
+          </label>
           <input type="email" id="email" required />
           <br />
           <br />
-          <label>
+          <label class="contact">
             Comment:
             <br />
-            <textarea></textarea>
+            <textarea class="contact"></textarea>
           </label>
           <br />
           <input class="submit-button" type="submit" name="submit" />
